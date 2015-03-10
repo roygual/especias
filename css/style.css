@@ -186,11 +186,11 @@ a.button1:hover {
 }
 .fine-igredients {
 	background: rgba(0, 0, 0, 0.77);
-	width: 50%;
+	width: 100%;
 	float: right;
 	margin: 6em auto 0;
 	text-align: center;
-	padding: 4em 5em;
+	padding: 9em 5em;
 }
 .fine-igredient h3 {
 	font-size: 3em;
