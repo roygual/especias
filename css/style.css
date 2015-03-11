@@ -4,6 +4,8 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+
 body a{
     transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -188,9 +190,9 @@ a.button1:hover {
 	background: rgba(0, 0, 0, 0.77);
 	width: 100%;
 	float: right;
-	margin: 6em auto 0;
+	margin: 0em auto 0;
 	text-align: center;
-	padding: 9em 5em;
+	padding: 2em 5em;
 }
 .fine-igredient h3 {
 	font-size: 3em;
@@ -202,7 +204,7 @@ a.button1:hover {
 .fine-igredient p{
 	font-size: 1.2em;
 	color: #ffffff;
-	padding:1.5em 0;
+	padding:1.0em 0;
 	font-family: 'Lato', sans-serif;
 	line-height: 1.5em;
 	font-weight:300;
@@ -211,8 +213,66 @@ a.button1:hover {
 
 .igredients-img {
 	float: left;
-	margin: 0px 12px 0 15px;
+	margin: 15px 12px 0 15px;
+    display: block;
+    background: url(../images/magnify.png) center center no-repeat;
 }
+
+.igredients-img:hover img {
+    opacity: 0.2;
+        }
+
+.igredients-img img {
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    width: 100%;
+    box-shadow: 0 0 #fff;
+        }
+
+.igredients-imgs a i .icon1{
+	background-position: 0px 1px;
+}
+.igredients-imgs a i.icon1:hover {
+	opacity: 0.5;
+    background-color: #f1f0f1;
+    padding: 1px;
+}
+
+
+#prevArrow,#nextArrow{
+	border:none;
+	text-decoration:none;
+	background:url('/images/arrows.png') no-repeat;
+	opacity:0.5;
+	cursor:pointer;
+	position:absolute;
+	width:43px;
+	height:58px;
+	
+	top:50%;
+	margin-top:-29px;
+	
+	-moz-transition:opacity 0.2s ease;
+	-webkit-transition:opacity 0.2s ease;
+	transition:opacity 0.2s ease;
+}
+
+#prevArrow:hover, #nextArrow:hover{
+	opacity:1;
+}
+
+#prevArrow{
+	background-position:left top;
+	left:40px;
+}
+
+#nextArrow{
+	background-position:right top;
+	right:40px;
+}
+
+
 .menu9{
 	background: url("../images/banner1.jpg") no-repeat;
 	background-size:cover;
@@ -1152,9 +1212,9 @@ a.button1:hover {
 		}
 	}
 	
-	@media(max-width:640px){
+	@media(max-width:1000px){
 		.header {
-			min-height: 290px;
+			min-height: 29px;
 		}
 		.top-menu ul li {
 			padding: 5px 0;
@@ -1192,8 +1252,10 @@ a.button1:hover {
 			padding: 0.8em 0em;
 			height: 58px;
 		}
+        
+        
 		.igredients {
-			min-height: 295px;
+			min-height: 95px;
 		}
 		.fine-igredients {
 			padding: 1.5em 2em;
@@ -1209,6 +1271,14 @@ a.button1:hover {
 			font-size: 1em;
 			padding: 0.5em 0;
 		}
+        
+    }
+        
+        
+        
+        
+        
+        
 		.menu9 {
 			min-height: 655px;
 		}
@@ -1517,5 +1587,13 @@ a.button1:hover {
 		.footer-bottom p {
 			font-weight: 400;
 			font-size: 1em;
-		}
+		}      
+            
 	}
+        
+
+ /* Arrows */
+
+
+        
+   
