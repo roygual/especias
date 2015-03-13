@@ -362,15 +362,17 @@ a.button1:hover {
 	padding: 3px 15px;
 	color: #f1edde;
 }
+
 .reviews {
 	background: url("../images/banner3.jpg") no-repeat;
 	background-size: cover;
 	min-height: 645px;
 
 }
+
 .review-info {
 	background: rgba(0, 0, 0, 0.77);
-	width: 57%;
+	width: 100%;
 	margin: 6em auto 0;
 	text-align: center;
 	padding: 3.5em 4em;
@@ -871,9 +873,22 @@ a.button1:hover {
 			.menu-grid p {
 				font-size: 1.06em;
 			}
+            
 			.reviews{
 				min-height: 477px;
 			}
+            
+            
+            .circle-text, #googleMap{
+                width: 500px;
+                height: 380px;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                background: #4679BD;
+                            }
+            
+            
 			.review-info img {
 				width: 40%;
 			}
@@ -890,6 +905,7 @@ a.button1:hover {
 				font-size: 1.19em;
 				padding: 1.2em 0;
 			}
+                                    
 			.reservations{
 				min-height: 520px;
 				padding-top: 4.5em;
