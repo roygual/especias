@@ -44,7 +44,7 @@ body{
 .header{
 	background: url("../images/banner.jpg") no-repeat;
 	background-size:cover;
-	min-height:650px;
+	min-height:50px;
 }
 .header-top {
 	background: rgba(0, 0, 0, 0.04);
@@ -52,7 +52,7 @@ body{
 .logo{
 	float:left;
 	width: 25%;
-	margin-right: 2%;
+	margin-right: 0.5%;
 }
 .logo a{
 	
@@ -70,7 +70,7 @@ body{
 	color: #ffffff;
 	text-decoration: none;
 	text-transform: capitalize;
-	margin: 0 1em;
+	margin: 0 0.5em;
 	font-family: 'Gentium Book Basic', serif;
 	font-weight: 800;
 }
@@ -90,18 +90,7 @@ body{
 	display: inline-block;
 	
 }
-.social-icon a i .icon1{
-	background-position: 0px 1px;
-}
-.social-icon a i.icon1:hover {
-	opacity: 0.5;
-}
-.social-icon a i.icon2{
-	background-position: -40px 0px;
-}
-.social-icon a i.icon2:hover {
-	opacity: 0.5;
-}
+
 .social-icon a i.icon3{
 	background-position: -80px 0px;
 }
@@ -110,9 +99,9 @@ body{
 }
 .baneer-center {
 	text-align: center;
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
-	padding-top:8em;
+	padding-top:6em;
 }
 .baneer-center h1 {
 	font-size: 3em;

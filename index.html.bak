@@ -1,6 +1,5 @@
 <!--Author: W3layouts
-Author URL: http://w3layouts.comLicense: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/-->
+Author URL: http://w3layouts.comLicense: Creative Commons Attribution 3.0 UnportedLicense URL: http://creativecommons.org/licenses/by/3.0/-->
 <!DOCTYPE html><html>
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
@@ -11,6 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design">
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/touchTouch.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
@@ -25,6 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!---- start-smoth-scrolling---->
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -34,6 +35,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
     <!---End-smoth-scrolling---->
+    <script src="js/touchTouch.jquery.js"></script>
     <!---strat-date-piker---->
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/jquery-ui.js"></script>
@@ -53,16 +55,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <body>
     <div class="header" id="home">
       <div class="container">
-        <div style="margin-left: -85px; width: 1326px;" class="header-top">
+        <div style="margin-left: 0%; width: 100%;" class="header-top">
           <div class="logo wow fadeInLeft" data-wow-delay="0.5s"> <a href="index.html"><img
                 src="images/logo.png" class="img-responsive" alt=""></a> </div>
           <div class="top-menu"> <span class="menu"> </span>
-            <ul>
+            <ul style="margin-left: -14px; width: 103%;">
               <li><a href="#home" class="scroll"><span data-hover="home">inicio</span></a></li>
               <li><a href="#about" class="scroll"><span data-hover="about">historia</span></a></li>
               <li><a href="#igredients" class="scroll"><span data-hover="igredients">catalogo</span></a></li>
               <li><a href="#menu" class="scroll"><span data-hover="menu">recetas</span></a></li>
-              <li><a href="#reviews" class="scroll"><span data-hover="reviews">donde comprar</span></a></li>
+              <li><a href="#reviews" class="scroll"><span data-hover="reviews">donde
+                    comprar</span></a></li>
               <li><a href="#reservations" class="scroll"><span data-hover="reservations">contactenos</span></a></li>
             </ul>
           </div>
@@ -73,15 +76,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 });
 		 });
 		 </script>
-          <div class="social-icon"> <a href="#"><i class="icon1"></i></a> <a href="#"><i
-                class="icon2"></i></a> <a href="#"><i class="icon3"></i></a> </div>
+          <div style="margin-left: 0px; width: 20%;" class="social-icon"> <a
+              href="#"><i class="icon1"></i></a> <a href="#"><i class="icon2"></i></a>
+            <a href="#"><i class="icon3"></i></a> </div>
           <div class="clearfix"></div>
         </div>
         <div class="baneer-center wow fadeInLeft" data-wow-delay="0.5s">
           <h1>los ingredientes perfectos para la comida perfecta</h1>
           <img src="images/divider.png" alt=""> </div>
-        <div class="buttons"> <a class="button" href="#igredients">productos</a> <a class="button1"
-            href="#reviews">donde comprar</a> </div>
+        <div class="buttons"> <a class="button" href="#igredients">productos</a>
+          <a class="button1" href="#reviews">donde comprar</a> </div>
       </div>
     </div>
     <div class="content">
@@ -89,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
           <div class="col-md-6 about-leftgrid wow bounceInRight animated" data-wow-delay="0.4s"
             style="visibility: visible; -webkit-animation-delay: 0.4s;">
-            <h2>Just the right food</h2>
+            <h2>Historia</h2>
             <img src="images/img2.png" alt="">
             <p>If you’ve been to one of our restaurants, you’ve seen – and
               tasted – what keeps our customers coming back for more. Perfect
@@ -108,21 +112,70 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="fine-igredients wow bounceInRight animated" data-wow-delay="0.4s"
             style="visibility: visible; -webkit-animation-delay: 0.4s;">
             <div class="fine-igredient">
-              <h3>Fine igredients</h3>
+              <h3>Catalogo</h3>
               <img src="images/divider.png" alt="">
-              <p>If you’ve been to one of our restaurants, you’ve seen – and
-                tasted – what keeps our customers coming back for more. Perfect
-                materials and freshly baked food, delicious Lambda cakes,
-                muffins, and gourmet coffees make us hard to resist! Stop in
-                today and check us out!</p>
+              <p>Si usted, a visto – y saboreado nuestros productos – que es lo
+                que mantiene a nuestros clientes fieles a nuestros productos.
+                Ingredientes perfectos y frescos, delicias de la surtidora, solo
+                lo mejor nos hace dificil de resistir! compre hoy y compruebelo!</p>
             </div>
             <div class="igredients-imgs">
-              <div class="igredients-img"> <img src="images/pic-1.png" class="img-responsive"
-                  alt=""> </div>
-              <div class="igredients-img"> <img src="images/pic-2.png" class="img-responsive"
-                  alt=""> </div>
-              <div class="igredients-img"> <img src="images/pic-3.png" class="img-responsive"
-                  alt=""> </div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
               <div class="clearfix"></div>
             </div>
             <div class="clearfix"></div>
@@ -312,14 +365,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
           <div class="review-info  wow bounceInLeft animated" data-wow-delay="0.4s"
             style="visibility: visible; -webkit-animation-delay: 0.4s;">
-            <h3>Gauest Reviews</h3>
+            <h3>Donde comprar</h3>
             <img src="images/divider.png" alt="">
-            <p>"If you’ve been to one of our restaurants, you’ve seen – and
-              tasted – what keeps our customers coming back for more. Perfect
-              materials and freshly baked food, delicious Lambda cakes, muffins,
-              and gourmet coffees make us hard to resist! Stop in today and
-              check us out!</p>
-            <p>- food inc, New York</p>
+            <div id="map-canvas" class="circle-text"> <iframe src="https://www.google.com/maps/embed?pb=%211m16%211m12%211m3%211d119452.68596594417%212d-103.33541314999998%213d20.673791950000002%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%212m1%211sguadalajara%2C+walmart%215e0%213m2%211ses-419%212smx%214v1426283682203"
+                style="border:0" width="100%" frameborder="0" height="450"></iframe>
+            </div>
+            <p>Si usted, a visto – y saboreado nuestros productos – ¿que es lo
+              que mantiene a nuestros clientes fieles a nuestros productos?.
+              Ingredientes perfectos y frescos, delicias de la surtidora, solo
+              lo mejor nos hace dificil de resistir! compre hoy y compruebelo!</p>
           </div>
         </div>
       </div>
