@@ -79,24 +79,7 @@ body{
 	text-transform: capitalize;
 }
 
-.social-icon {
-	float:right;
-	padding-top: 4.5em;
-}
-.social-icon a i{
-	width:40px;
-	height:40px;
-	background: url("../images/img-sprite.png") no-repeat 0px 1px;
-	display: inline-block;
-	
-}
 
-.social-icon a i.icon3{
-	background-position: -80px 0px;
-}
-.social-icon a i.icon3:hover {
-	opacity: 0.5;
-}
 .baneer-center {
 	text-align: center;
 	width: 90%;
