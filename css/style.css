@@ -51,7 +51,7 @@ body{
 }
 .logo{
 	float:left;
-	width: 25%;
+	width: 28%;
 	margin-right: 0.5%;
 }
 .logo a{
@@ -156,7 +156,7 @@ a.button1:hover {
 {
 	background:url("../images/banner2.jpg") no-repeat;
 	background-size:cover;
-	min-height:750px; 
+	min-height:350px; 
 }
 .fine-igredients {
 	background: rgba(0, 0, 0, 0.77);
@@ -444,6 +444,50 @@ a.button1:hover {
 	font-weight: 300;
 	font-style: italic;
 }
+
+
+
+.estado{
+	float:left;
+	width:35%;
+	padding-bottom: 4%;
+}
+.estado input.text {
+	width: 92%;
+	padding: 2px 9px;
+	margin-right: 42px;
+	font-size: 1.5em;
+	outline: none;
+	color: #4c4c4c;
+	color: #4c4c4c;
+	border: 1px solid #dedfdf;
+	font-weight: 300;
+	font-style: italic;
+}
+
+
+.tienda{
+	float:right;
+	width:35%;
+	padding-bottom: 4%;
+}
+.tienda input.text {
+	width: 92%;
+	padding: 2px 9px;
+	margin-right: 42px;
+	font-size: 1.5em;
+	outline: none;
+	color: #4c4c4c;
+	border: 1px solid #dedfdf;
+	font-weight: 300;
+	font-style: italic;
+}
+
+
+
+
+
+
 /* WRAPPER */
 .dropdown-button:first-child{
 	margin-left:0;
@@ -1314,9 +1358,7 @@ a.button1:hover {
 		{
 			font-size:1.1em;
 		}
-		.dropdown {
-			font-size:1.1em;
-		}
+		
 		.reservation-rightgrid input[type="button"] {
 			width: 45%;
 			margin: 0px 1em;
