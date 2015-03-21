@@ -417,11 +417,16 @@ a.button1:hover {
 	padding-bottom: 3px;
 	font-weight: 600;
 }
+
+
+
 .contact-text{
 	float:left;
 	width:50%;
 	padding-bottom: 4%;
 }
+
+
 .contact-text input.text {
 	width: 92%;
 	padding: 2px 9px;
@@ -433,7 +438,8 @@ a.button1:hover {
 	font-weight: 300;
 	font-style: italic;
 }
-.contact-text input#datepicker {
+
+.mensaje {
 	width: 92%;
 	padding: 2px 9px;
 	margin-right: 42px;
@@ -444,8 +450,6 @@ a.button1:hover {
 	font-weight: 300;
 	font-style: italic;
 }
-
-
 
 .estado{
 	float:left;
@@ -507,6 +511,21 @@ a.button1:hover {
 	font-weight: 300;
 	font-style: italic;
 }
+
+
+.tienda {
+	position: relative;
+	margin: 0px 15px 0px 0px;
+	width: 35%;
+	padding: 4px 9px;
+	font-size: 1.0em;
+	outline: none;
+	color: #b6b6b6;
+	border: 1px solid #dedfdf;
+	font-weight: 300;
+	font-style: italic;
+}
+
 .dropdown-button{
 	display:inline-block;
 }
