@@ -38,10 +38,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       
 <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />     
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>    
-<script type="text/javascript">
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
 
+<script type="text/javascript">
 var store = new google.maps.LatLng(21.878333,-102.289550)  
 var state;
+var map;
+var infowindow;
     
 function updateMap(selectControl)   {
     
@@ -65,22 +68,45 @@ function updateMap(selectControl)   {
 
     function initialize(stateParam, storeParam) {
         var myLatLng = stateParam.center;
-        var myOptions = {
-          zoom: 11,
-          center: myLatLng,
-          
-          mapTypeId: google.maps.MapTypeId.DRIVING
-                        };
+        
+      map = new google.maps.Map(document.getElementById('map_canvas'), {
+    center: stateParam.center,
+    zoom: 11
+  });
 
-
-       var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-
-       
-       stateParam.setMap(map);
+  var request = {
+    location: stateParam.center,
+    radius: 1000,
+    types: ['store']
+  };
+  infowindow = new google.maps.InfoWindow();
+  var service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, callback);
+               
     }
    
+    function callback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      createMarker(results[i]);
+    }
+  }
+}
+
+function createMarker(place) {
+  var placeLoc = place.geometry.location;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent(place.name);
+    infowindow.open(map, this);
+  });
     
-   
+  google.maps.event.addDomListener(window, 'load', initialize);  
+}
 </script>
       
       
