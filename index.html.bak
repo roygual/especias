@@ -33,6 +33,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		});
 	</script>
+      
+    <script type="text/javascript">
+		function getEstado(sel) {
+        var value = sel.value;                                  }
+	</script>  
+      
+      
+      
     <!---End-smoth-scrolling---->
     <script src="js/touchTouch.jquery.js"></script>
     <!---strat-date-piker---->
@@ -54,7 +62,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="top-menu"> <span class="menu"> </span>
             <ul style="margin-left: 0%; width: 100%;">
               <li><a href="#home" class="scroll"><span data-hover="home">inicio</span></a></li>
-              <li><a href="#about" class="scroll"><span data-hover="about">historia</span></a></li>
+              <li><a href="#about" class="scroll"><span data-hover="about">Nosostros</span></a></li>
               <li><a href="#igredients" class="scroll"><span data-hover="igredients">catalogo</span></a></li>
               <li><a href="#menu" class="scroll"><span data-hover="menu">recetas</span></a></li>
               <li><a href="#reviews" class="scroll"><span data-hover="reviews">donde
@@ -84,13 +92,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
           <div class="col-md-6 about-leftgrid wow bounceInRight animated" data-wow-delay="0.4s"
             style="visibility: visible; -webkit-animation-delay: 0.4s;">
-            <h2>Historia</h2>
+            <h2>Nosostros</h2>
             <img src="images/img2.png" alt="">
-            <p>If you’ve been to one of our restaurants, you’ve seen – and
-              tasted – what keeps our customers coming back for more. Perfect
-              materials and freshly baked food, delicious Lambda cakes, muffins,
-              and gourmet coffees make us hard to resist! Stop in today and
-              check us out!</p>
+            <p>Somos una empresa dedicada a empacar especias y condimentos (tales como pimienta, sal de ajo, perejil, laurel, varios tipos de chile, canela, pasas, arándanos, uva pasa, entre muchos otros), solo de la mejor calidad al mejor precio y distribuirlos en tiendas de autoservicio, a lo largo de la República Mexicana.</p>
+              
+              
+            
             <img src="images/cook.png" class="cook" alt=""> </div>
           <div class="col-md-6 about-rightgrid  wow bounceInLeft animated" data-wow-delay="0.4s"
             style="visibility: visible; -webkit-animation-delay: 0.4s;"> <img src="images/dish.png"
@@ -357,10 +364,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="review-info  wow bounceInLeft animated" data-wow-delay="0.4s"
             style="visibility: visible; -webkit-animation-delay: 0.4s;">
             <h3>Donde comprar</h3>
-            <div class="estado">
+            
+              <div class="estado">
               <h5 style="color: #f5ecec;">Estado de la República Mexicana</h5>
-              <div class="dropdown-button">
-                <select class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}">
+              <div class="seleccion-compra">
+                <select id="estado" class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}">
                   <option value="0">ESTADO</option>
                   <option value="1">Aguascalientes</option>
                   <option value="2">Baja California</option>
@@ -397,9 +405,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </select>
               </div>
             </div>
+                
+              
             <div class="tienda">
               <h5 style="color: #f5ecec;">Tienda</h5>
-              <div class="dropdown-button">
+              <div class="seleccion-compra">
                 <select class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}">
                   <option value="0">TIENDA</option>
                   <option value="1">Aurrera</option>
@@ -412,9 +422,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               </div>
             </div>
             <img src="images/divider.png" alt="">
+              
+              
+              
             <div id="map-canvas" class="circle-text"> <iframe src="https://www.google.com/maps/embed?pb=%211m16%211m12%211m3%211d119452.68596594417%212d-103.33541314999998%213d20.673791950000002%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%212m1%211sguadalajara%2C+walmart%215e0%213m2%211ses-419%212smx%214v1426283682203"
                 style="border:0" frameborder="0" height="450" width="100%"></iframe>
             </div>
+              
+              
+              
           </div>
         </div>
       </div>
@@ -438,7 +454,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <span>Delicious Lambda cakes, muffins, and gourmet coffees make us
               hard to resist! Stop in today and check us out! Perfect materials
               and freshly baked food.</span>
-            <div class="contact">
+            <div style="margin-left: -16px;" class="contact">
               <div class="contact-text">
                 <h5>nombre</h5>
                 <input class="text" value="tu nombre *" onfocus="this.value = '';"
@@ -448,17 +464,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h5>correo</h5>
                 <input class="text" value="tu e-mail *" onfocus="this.value = '';"
                   onblur="if (this.value == '') {this.value = 'tu e-mail*';}" type="text">
-              </div>                              
-              
+              </div>
               <div class="clearfix"></div>
+              
+              <h5>mensaje</h5>
+              <textarea class="mensaje" name="message" maxlength="1000" cols="55"
+                rows="4"></textarea> 
                 
-                
-                <h5>mensaje</h5>
-                <textarea class="mensaje" name="message" maxlength="1000" cols="55"
-                  rows="6"></textarea>
-                
-                
-              <input class="btn btn-1 btn-1c" value="enviar" type="button"> </div>
+                <input class="btn btn-1 btn-1c" value="enviar"
+                type="button"> </div>
             <div class="clearfix"></div>
           </div>
         </div>
