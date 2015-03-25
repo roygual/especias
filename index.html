@@ -33,6 +33,60 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		});
 	</script>
+      
+      
+      
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />     
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>    
+<script type="text/javascript">
+
+var store = new google.maps.LatLng(21.878333,-102.289550)  
+var state;
+    
+function updateMap(selectControl)   {
+    
+        switch(selectControl)
+        {
+    case '1':
+       state = {
+          center: new google.maps.LatLng(21.878333, -102.289550),
+          zoom: 11,         
+        };
+
+      break;
+    
+                
+    default: break;
+         }
+    
+    initialize(state, store);
+                                     }
+     
+
+    function initialize(stateParam, storeParam) {
+        var myLatLng = stateParam.center;
+        var myOptions = {
+          zoom: 11,
+          center: myLatLng,
+          
+          mapTypeId: google.maps.MapTypeId.DRIVING
+                        };
+
+
+       var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+       
+       stateParam.setMap(map);
+    }
+   
+    
+   
+</script>
+      
+      
+      
+   
+
     <script type="text/javascript">
 		function getEstado(sel) {
         var value = sel.value;                                  }
@@ -288,7 +342,7 @@ Hace 10 años que "Productos La Surtidora" se convirtió en "Especias y condimen
         </div>
         </div>
     
-      <div class="reviews" id="reviews">
+      <div class="reviews" id="reviews" onload="initialize()">
         <div class="container">
           <div class="review-info  wow bounceInLeft animated" data-wow-delay="0.4s"
             style="visibility: visible; -webkit-animation-delay: 0.4s;">
@@ -296,7 +350,7 @@ Hace 10 años que "Productos La Surtidora" se convirtió en "Especias y condimen
             <div class="estado">
               <h5 style="color: #f5ecec;">Estado de la República Mexicana</h5>
               <div class="seleccion-compra">
-                <select id="estado" class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}">
+                <select id="estado" class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}" onchange="updateMap(this.options[this.selectedIndex].value)">
                   <option value="0">ESTADO</option>
                   <option value="1">Aguascalientes</option>
                   <option value="2">Baja California</option>
@@ -333,23 +387,28 @@ Hace 10 años que "Productos La Surtidora" se convirtió en "Especias y condimen
                 </select>
               </div>
             </div>
-            <div class="tienda">
+            <div class="tienda" >
               <h5 style="color: #f5ecec;">Tienda</h5>
               <div class="seleccion-compra">
-                <select class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}">
+                <select class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}"
+                        onchange="updateTienda(this.options[this.selectedIndex].value)">
                   <option value="0">TIENDA</option>
                   <option value="1">Aurrera</option>
                   <option value="2">Chedraui</option>
                   <option value="3">Comercial Mexicana</option>
                   <option value="4">Soriana</option>
-                  <option value="5">Superama</option>
-                  <option value="6">Walmart</option>
+                  <option value="5">Superama</option>                  
                 </select>
               </div>
             </div>
             <img src="images/divider.png" alt="">
-            <div id="map-canvas" class="circle-text"> <iframe src="https://www.google.com/maps/embed?pb=%211m16%211m12%211m3%211d119452.68596594417%212d-103.33541314999998%213d20.673791950000002%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%212m1%211sguadalajara%2C+walmart%215e0%213m2%211ses-419%212smx%214v1426283682203"
-                style="border:0" frameborder="0" height="450" width="100%"></iframe>
+            <div id="map" style="width:100%; height:450px; display:block;" > 
+                <div id="map_canvas" style="width:100%; height:450px;">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14967891.246216552!2d-101.96621148750005!3d23.66628895788603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1427306212618" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+                
+                
+                </div>
             </div>
           </div>
         </div>
