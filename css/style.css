@@ -65,7 +65,7 @@ body{
 	color:#eee;
 }
 .top-menu{
-	float:right;
+	float:left;
 	padding-top: 5em;
 }
 .top-menu ul li{
@@ -704,32 +704,19 @@ a.button1:hover {
 	padding:3.5em 0 0;
 }
 .footer-socialicons{
-	padding-top: 3.0em;
+	padding-top: 1.0em;
 }
 .footer-socialicons a i{
-	width:16px;
-	height: 16px;
-	background: url("../images/img-sprite.png") no-repeat 0px -40px;
-	display: inline-block;
+	width: 29px;
+	height: 29px;
+	background: url("../images/FB-f-Logo__blue_29.png") no-repeat 0px -40px;
+	
 }
 .footer-socialicons a i .icon4{
 	background-position: -0px -40px;
 }
-.footer-socialicons a i.icon4:hover {
-	opacity: 0.5;
-}
-.footer-socialicons a i.icon5{
-	background-position: -16px -40px;
-}
-.footer-socialicons a i.icon5:hover {
-	opacity: 0.5;
-}
-.footer-socialicons a i.icon6{
-	background-position: -32px -40px;
-}
-.footer-socialicons a i.icon6:hover {
-	opacity: 0.5;
-}
+
+
 .footer-bottom {
 	text-align: center;
 	padding-top: 2em;
@@ -1630,7 +1617,8 @@ a.button1:hover {
 		.footer-bottom p {
 			font-weight: 400;
 			font-size: 1em;
-		}      
+		}   
+        
             
 	}
         

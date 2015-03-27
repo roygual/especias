@@ -5,8 +5,8 @@ Author URL: http://w3layouts.comLicense: Creative Commons Attribution 3.0 Unport
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <title>Especias y Condimentos| La Surtidora</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Lambda Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design">
+    <meta name="keywords" content="especias, spices, la surtidora, ecm la surtidora, 
+ecmlasurtidora, especias y condimentos de mexico">
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/touchTouch.css" rel="stylesheet" type="text/css">
@@ -76,8 +76,9 @@ function updateMap(selectControl)   {
 
   var request = {
     location: stateParam.center,
-    radius: 1000,
-    types: ['store']
+    radius: 50000,
+    types: ['store'],
+    name: ['aurrera']
   };
   infowindow = new google.maps.InfoWindow();
   var service = new google.maps.places.PlacesService(map);
@@ -136,14 +137,14 @@ function createMarker(place) {
           <div class="logo wow fadeInLeft" data-wow-delay="0.5s"> <a href="index.html"><img
                 src="images/logo.png" class="img-responsive" alt=""></a> </div>
           <div class="top-menu"> <span class="menu"> </span>
-            <ul style="margin-left: 0%; width: 100%;">
-              <li><a href="#home" class="scroll"><span data-hover="home">inicio</span></a></li>
+            <ul style="margin-left: 0%; width: 100%;">              
               <li><a href="#about" class="scroll"><span data-hover="about">Historia</span></a></li>
               <li><a href="#igredients" class="scroll"><span data-hover="igredients">catalogo</span></a></li>
               <li><a href="#menu" class="scroll"><span data-hover="menu">recetas</span></a></li>
               <li><a href="#reviews" class="scroll"><span data-hover="reviews">donde
                     comprar</span></a></li>
               <li><a href="#reservations" class="scroll"><span data-hover="reservations">contactenos</span></a></li>
+              <li><a href="#nosotros" class="scroll"><span data-hover="nosotros">nosotros</span></a></li>
             </ul>
           </div>
           <!--script-nav-->
@@ -170,16 +171,7 @@ function createMarker(place) {
             style="visibility: visible; height: 692px;">
             <h2>Historia</h2>
             <img src="images/img2.png" alt="">
-            <p>Especias y Condimentos de México, S.A. de C.V. es una empresa que inició su actividad como negocio familiar, hace más de 60 años en Culiacán, Sinaloa. 
-
-Empacándose en bolsas muy pequeñas productos como pimienta, comino, clavo de olor y canela, 
-En 1953 se continuó en Tijuana bajo el mismo concepto y no fue sino hasta 1968 que oficialmente nació la empresa "Productos La Surtidora" con únicamente 2 empleados, creció la empresa hasta convertirnos en lideres en este ramo del comercio y poco a poco se amplió nuestro alcance hasta cubrir todo el estado de Baja California.
-
-En 1992 entramos al interior del País, al establecer la sucursal en la ciudad de Guadalajara.
-
-Después de vencer las dificultades propias que trae la introducción de un producto nuevo en el mercado, nos hemos consolidado con la venta de nuestros productos en toda la República Mexicana.
-
-Hace 10 años que "Productos La Surtidora" se convirtió en "Especias y condimentos de México S.A. de C.V.".
+            <p>Somos una empresa que inició su actividad como negocio familiar, hace más de 60 años en Culiacán, Sinaloa. Empacándose en bolsas muy pequeñas productos como pimienta, comino, clavo de olor y canela, En 1953 se continuó en Tijuana bajo el mismo concepto y no fue sino hasta 1968 que oficialmente nació la empresa "Productos La Surtidora" con únicamente 2 empleados, creció la empresa hasta convertirnos en lideres en este ramo del comercio y poco a poco se amplió nuestro alcance hasta cubrir todo el estado de Baja California. En 1992 entramos al interior del País, al establecer la sucursal en la ciudad de Guadalajara. Después de vencer las dificultades propias que trae la introducción de un producto nuevo en el mercado, nos hemos consolidado con la venta de nuestros productos en toda la República Mexicana. Hace 10 años que se convirtió en <span>Especias y condimentos de México S.A. de C.V</span>.
 </p>
               
               
@@ -474,12 +466,28 @@ Hace 10 años que "Productos La Surtidora" se convirtió en "Especias y condimen
             <div class="clearfix"></div>
           </div>
         </div>
-      </div>
-      <div class="footer-section wow fadeInLeft" data-wow-delay="0.5s">
+          <script type="text/javascript">
+						$(document).ready(function() {
+							
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script> <a href="#" id="toTop" style="display: block;"> <span id="toTopHover"
+              style="opacity: 1;"> </span></a> </div>
+     
+      <div id="nosotros" class="footer-section wow fadeInLeft" data-wow-delay="0.5s">
         <div class="container">
           <div class="footer-grids">
             <div class="col-md-4 footer-grid">
-              <h5>acerca de nosotros</h5>
+              <h5>Mision</h5>
               <img src="images/divider.png" alt="">
                 
                 
@@ -496,19 +504,19 @@ Hace 10 años que "Productos La Surtidora" se convirtió en "Especias y condimen
                   largo de la República Mexicana.  </p>
             </div>
             <div class="col-md-4 footer-grid">
-              <h5>Opening Hours</h5>
+              <h5>Vision</h5>
               <img src="images/divider.png" alt="">
-              <p><span>Mon-Thu:</span> 7:00am-8:00pm</p>
-              <p><span>Fri-Sun:</span> 7:00am-10:00pm</p>
-              <a href="#"><img src="images/cards.png" alt=""></a> </div>
+              <p>Es crecer a nivel internacional, convirtiéndonos en la empresa número uno en venta y distribución de especias y condimentos, dando seguridad a las personas que siempre obtendrán producto de la mejor calidad.</p>
+              
+               </div>
             <div class="col-md-4 footer-grid">
               <h5>Oficinas</h5>
               <img src="images/divider.png" alt="">
               <p>19th Paradise Street Sitia</p>
               <p>128 Meserole Avenue</p>
-              <div class="footer-socialicons"> <a href="#"><i class="icon4"></i></a>
-                <a href="#"><i class="icon5"></i></a> <a href="#"><i class="icon6"></i></a>
-              </div>
+                <a href="https://www.facebook.com/pages/La-Surtidora-ECM/789169701160820?fref=ts">
+                <img src="images/FB-f-Logo__blue_29.png" style="width:10%;height:10%">
+                </a>
             </div>
             <div class="clearfix"></div>
           </div>
