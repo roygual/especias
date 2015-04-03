@@ -1,0 +1,531 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.comLicense: Creative Commons Attribution 3.0 UnportedLicense URL: http://creativecommons.org/licenses/by/3.0/-->
+<!DOCTYPE html><html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Especias y Condimentos| La Surtidora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Lambda Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/touchTouch.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet"
+      type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700"
+      rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"
+      rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic"
+      rel="stylesheet" type="text/css">
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+      
+    <script type="text/javascript">
+		function getEstado(sel) {
+        var value = sel.value;                                  }
+	</script>  
+      
+      
+      
+    <!---End-smoth-scrolling---->
+    <script src="js/touchTouch.jquery.js"></script>
+    <!---strat-date-piker---->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-ui.js"></script>
+    <!--Animation-->
+    <script src="js/wow.min.js"></script>
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <script>
+	new WOW().init();
+</script><!---/End-Animation---->
+  </head>
+  <body>
+    <div class="header" id="home">
+      <div style="width: 90%;" class="container">
+        <div style="margin-left: 0%; width: 90%;" class="header-top">
+          <div class="logo wow fadeInLeft" data-wow-delay="0.5s"> <a href="index.html"><img
+                src="images/logo.png" class="img-responsive" alt=""></a> </div>
+          <div class="top-menu"> <span class="menu"> </span>
+            <ul style="margin-left: 0%; width: 100%;">
+              <li><a href="#home" class="scroll"><span data-hover="home">inicio</span></a></li>
+              <li><a href="#about" class="scroll"><span data-hover="about">Nosostros</span></a></li>
+              <li><a href="#igredients" class="scroll"><span data-hover="igredients">catalogo</span></a></li>
+              <li><a href="#menu" class="scroll"><span data-hover="menu">recetas</span></a></li>
+              <li><a href="#reviews" class="scroll"><span data-hover="reviews">donde
+                    comprar</span></a></li>
+              <li><a href="#reservations" class="scroll"><span data-hover="reservations">contactenos</span></a></li>
+            </ul>
+          </div>
+          <!--script-nav-->
+          <script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+          <div class="clearfix"></div>
+        </div>
+        <div class="baneer-center wow fadeInLeft" data-wow-delay="0.5s">
+          <h1>los ingredientes perfectos<br>
+            para la comida perfecta</h1>
+          <img src="images/divider.png" alt=""> </div>
+        <div class="buttons"> <a class="button" href="#igredients">productos</a>
+          <a class="button1" href="#reviews">donde comprar</a> </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="about" id="about">
+        <div class="container">
+          <div class="col-md-6 about-leftgrid wow bounceInRight animated" data-wow-delay="0.4s"
+            style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <h2>Nosostros</h2>
+            <img src="images/img2.png" alt="">
+            <p>Somos una empresa dedicada a empacar especias y condimentos (tales como pimienta, sal de ajo, perejil, laurel, varios tipos de chile, canela, pasas, arándanos, uva pasa, entre muchos otros), solo de la mejor calidad al mejor precio y distribuirlos en tiendas de autoservicio, a lo largo de la República Mexicana.</p>
+              
+              
+            
+            <img src="images/cook.png" class="cook" alt=""> </div>
+          <div class="col-md-6 about-rightgrid  wow bounceInLeft animated" data-wow-delay="0.4s"
+            style="visibility: visible; -webkit-animation-delay: 0.4s;"> <img src="images/dish.png"
+              alt=""> </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="igredients" id="igredients">
+        <div class="container">
+          <div class="fine-igredients wow bounceInRight animated" data-wow-delay="0.4s"
+            style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <div class="fine-igredient">
+              <h3>Catalogo</h3>
+              <img src="images/divider.png" alt="">
+              <p>Si usted, a visto – y saboreado nuestros productos – que es lo
+                que mantiene a nuestros clientes fieles a nuestros productos.
+                Ingredientes perfectos y frescos, delicias de la surtidora, solo
+                lo mejor nos hace dificil de resistir! compre hoy y compruebelo!</p>
+            </div>
+            <div class="igredients-imgs">
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig2.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig3.jpg"> <img src="images/pic-2.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="igredients-img"> <a href="images/bbig1.jpg"> <img src="images/pic-1.png"
+                    class="img-responsive" alt=""> </a></div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu9" id="menu">
+        <div class="container">
+          <div class="col-md-6 menu-grids wow bounceIn animated" data-wow-delay="0.4s"
+            style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <div class="menu-grid1">
+              <h3>appetisers</h3>
+              <img src="images/img2.png" alt="">
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>tzatsiki</h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$3.99</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+              </div>
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>Aubergine_Salad</h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$5.50</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
+              </div>
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>Aubergine_Salad </h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$5.25</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+              </div>
+            </div>
+            <div class="menu-grid2">
+              <h3>Salads</h3>
+              <img src="images/img2.png" alt="">
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>Olive_Special</h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$3.99 </h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+              </div>
+              <div class="menu1-grid"> <a href="#">special</a>
+                <div class="menu-grid5">
+                  <div class="menu-grid">
+                    <div class="tzatsikis">
+                      <div class="tzatsiki">
+                        <h4>Greek_Salad</h4>
+                      </div>
+                      <div class="dollar">
+                        <h4>$5.50</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>Gusto_Salad </h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$5.25</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 menu-grids1  wow bounceIn animated" data-wow-delay="0.4s"
+            style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <div class="menu-grid3">
+              <h3>Starters</h3>
+              <img src="images/img2.png" alt="">
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>Haloumi</h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$3.99</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+              </div>
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>Spinach_Pie</h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$5.50</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
+              </div>
+            </div>
+            <div class="menu-grid4">
+              <h3>Main Dishes</h3>
+              <img src="images/img2.png" alt="">
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>Cornish_Mackerel</h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$3.99</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+              </div>
+              <div class="menu1-grid"> <a href="#">special</a>
+                <div class="menu-grid5">
+                  <div class="menu-grid">
+                    <div class="tzatsikis">
+                      <div class="tzatsiki">
+                        <h4>Roast_Lamb </h4>
+                      </div>
+                      <div class="dollar">
+                        <h4>$5.50</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>Fried_Chicken</h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$5.25</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+              </div>
+              <div class="menu-grid">
+                <div class="tzatsikis">
+                  <div class="tzatsiki">
+                    <h4>Pastitsio</h4>
+                  </div>
+                  <div class="dollar">
+                    <h4>$3.99</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews" id="reviews">
+        <div class="container">
+          <div class="review-info  wow bounceInLeft animated" data-wow-delay="0.4s"
+            style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <h3>Donde comprar</h3>
+            
+              <div class="estado">
+              <h5 style="color: #f5ecec;">Estado de la República Mexicana</h5>
+              <div class="seleccion-compra">
+                <select id="estado" class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}">
+                  <option value="0">ESTADO</option>
+                  <option value="1">Aguascalientes</option>
+                  <option value="2">Baja California</option>
+                  <option value="3">Baja California Sur</option>
+                  <option value="4">Campeche</option>
+                  <option value="5">Coahuila de Zaragoza</option>
+                  <option value="6">Colima</option>
+                  <option value="7">Chiapas</option>
+                  <option value="8">Chihuahua</option>
+                  <option value="9">Distrito Federal</option>
+                  <option value="10">Durango</option>
+                  <option value="11">Guanajuato</option>
+                  <option value="12">Guerrero</option>
+                  <option value="13">Hidalgo</option>
+                  <option value="14">Jalisco</option>
+                  <option value="15">México</option>
+                  <option value="16">Michoacán de Ocampo</option>
+                  <option value="17">Morelos</option>
+                  <option value="18">Nayarit</option>
+                  <option value="19">Nuevo León</option>
+                  <option value="20">Oaxaca</option>
+                  <option value="21">Puebla</option>
+                  <option value="22">Querétaro</option>
+                  <option value="23">Quintana Roo</option>
+                  <option value="24">San Luis Potosí</option>
+                  <option value="25">Sinaloa</option>
+                  <option value="26">Sonora</option>
+                  <option value="27">Tabasco</option>
+                  <option value="28">Tamaulipas</option>
+                  <option value="29">Tlaxcala</option>
+                  <option value="30">Veracruz de Ignacio de la Llave</option>
+                  <option value="31">Yucatán</option>
+                  <option value="32">Zacatecas</option>
+                </select>
+              </div>
+            </div>
+                
+              
+            <div class="tienda">
+              <h5 style="color: #f5ecec;">Tienda</h5>
+              <div class="seleccion-compra">
+                <select class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}">
+                  <option value="0">TIENDA</option>
+                  <option value="1">Aurrera</option>
+                  <option value="2">Chedraui</option>
+                  <option value="3">Comercial Mexicana</option>
+                  <option value="4">Soriana</option>
+                  <option value="5">Superama</option>
+                  <option value="6">Walmart</option>
+                </select>
+              </div>
+            </div>
+            <img src="images/divider.png" alt="">
+              
+              
+              
+            <div id="map-canvas" class="circle-text"> <iframe src="https://www.google.com/maps/embed?pb=%211m16%211m12%211m3%211d119452.68596594417%212d-103.33541314999998%213d20.673791950000002%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%212m1%211sguadalajara%2C+walmart%215e0%213m2%211ses-419%212smx%214v1426283682203"
+                style="border:0" frameborder="0" height="450" width="100%"></iframe>
+            </div>
+              
+              
+              
+          </div>
+        </div>
+      </div>
+      <div class="reservations" id="reservations">
+        <div class="container">
+          <div class="col-md-6 grid-section wow bounceIn animated" data-wow-delay="0.4s"
+            style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <div class="reservation-leftgrid"> <img src="images/pic-4.jpg" class="img-responsive"
+                alt=""> </div>
+            <div class="reservation-leftgrid1"> <img src="images/pic-5.jpg" class="img-responsive"
+                alt=""> </div>
+            <div class=" clearfix"></div>
+          </div>
+          <div class="col-md-6 reservation-rightgrid wow bounceIn animated" data-wow-delay="0.4s"
+            style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <h4>Escribenos</h4>
+            <img src="images/img2.png" alt="">
+            <p>If you’ve been to one of our restaurants, you’ve seen – and
+              tasted – what keeps our customers coming back for more. Perfect
+              materials and freshly baked food.</p>
+            <span>Delicious Lambda cakes, muffins, and gourmet coffees make us
+              hard to resist! Stop in today and check us out! Perfect materials
+              and freshly baked food.</span>
+            <div style="margin-left: -16px;" class="contact">
+              <div class="contact-text">
+                <h5>nombre</h5>
+                <input class="text" value="tu nombre *" onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'tu nombre*';}" type="text">
+              </div>
+              <div class="contact-text">
+                <h5>correo</h5>
+                <input class="text" value="tu e-mail *" onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'tu e-mail*';}" type="text">
+              </div>
+              <div class="clearfix"></div>
+              
+              <h5>mensaje</h5>
+              <textarea class="mensaje" name="message" maxlength="1000" cols="55"
+                rows="4"></textarea> 
+                
+                <input class="btn btn-1 btn-1c" value="enviar"
+                type="button"> </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section wow fadeInLeft" data-wow-delay="0.5s">
+        <div class="container">
+          <div class="footer-grids">
+            <div class="col-md-4 footer-grid">
+              <h5>about us</h5>
+              <img src="images/divider.png" alt="">
+              <p>Lambda's new and expanded Chelsea location represents a truly
+                authentic <span>Greek</span> patisserie, featuring breakfasts
+                of fresh croissants and</p>
+              <p>steaming bowls of café.Lamda the best restaurant in town</p>
+            </div>
+            <div class="col-md-4 footer-grid">
+              <h5>Opening Hours</h5>
+              <img src="images/divider.png" alt="">
+              <p><span>Mon-Thu:</span> 7:00am-8:00pm</p>
+              <p><span>Fri-Sun:</span> 7:00am-10:00pm</p>
+              <a href="#"><img src="images/cards.png" alt=""></a> </div>
+            <div class="col-md-4 footer-grid">
+              <h5>Our Location</h5>
+              <img src="images/divider.png" alt="">
+              <p>19th Paradise Street Sitia</p>
+              <p>128 Meserole Avenue</p>
+              <div class="footer-socialicons"> <a href="#"><i class="icon4"></i></a>
+                <a href="#"><i class="icon5"></i></a> <a href="#"><i class="icon6"></i></a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="footer-bottom">
+            <p> Copyright ©2015 All rights Reserved | Template by<a href="http://w3layouts.com"
+                target="target_blank">W3Layouts</a></p>
+          </div>
+          <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script> <a href="#" id="toTop" style="display: block;"> <span id="toTopHover"
+              style="opacity: 1;"> </span></a> </div>
+      </div>
+    </div>
+  </body>
+</html>

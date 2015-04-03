@@ -3,7 +3,7 @@ Author URL: http://w3layouts.comLicense: Creative Commons Attribution 3.0 Unport
 <!DOCTYPE html><html>
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <title>Especias y Condimentos| La Surtidora</title>
+    <title>Especias y Condimentos | La Surtidora</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="especias, spices, la surtidora, ecm la surtidora, 
 ecmlasurtidora, especias y condimentos de mexico">
@@ -33,14 +33,11 @@ ecmlasurtidora, especias y condimentos de mexico">
 			});
 		});
 	</script>
-      
-      
-      
-<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />     
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>    
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
-
-<script type="text/javascript">
+    <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css"
+      rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+    <script type="text/javascript">
 var store = new google.maps.LatLng(21.878333,-102.289550)  
 var state;
 var map;
@@ -53,6 +50,7 @@ function updateMap(selectControl)   {
     case '1':
        state = {
           center: new google.maps.LatLng(21.878333, -102.289550),
+           
           zoom: 11,         
         };
 
@@ -69,15 +67,16 @@ function updateMap(selectControl)   {
     function initialize(stateParam, storeParam) {
         var myLatLng = stateParam.center;
         
-      map = new google.maps.Map(document.getElementById('map_canvas'), {
+        map = new google.maps.Map(document.getElementById('map_canvas'), {
     center: stateParam.center,
     zoom: 11
   });
-
+                  
   var request = {
-    location: stateParam.center,
-    radius: 50000,
+    location: map.center,
+    radius: 5000,
     types: ['store'],
+    componentRestrictions: {country: "mx"},
     name: ['aurrera']
   };
   infowindow = new google.maps.InfoWindow();
@@ -108,13 +107,7 @@ function createMarker(place) {
     
   google.maps.event.addDomListener(window, 'load', initialize);  
 }
-</script>
-      
-      
-      
-   
-
-    <script type="text/javascript">
+</script> <script type="text/javascript">
 		function getEstado(sel) {
         var value = sel.value;                                  }
 	</script>
@@ -137,7 +130,7 @@ function createMarker(place) {
           <div class="logo wow fadeInLeft" data-wow-delay="0.5s"> <a href="index.html"><img
                 src="images/logo.png" class="img-responsive" alt=""></a> </div>
           <div class="top-menu"> <span class="menu"> </span>
-            <ul style="margin-left: 0%; width: 100%;">              
+            <ul style="margin-left: 0%; width: 100%;">
               <li><a href="#about" class="scroll"><span data-hover="about">Historia</span></a></li>
               <li><a href="#igredients" class="scroll"><span data-hover="igredients">catalogo</span></a></li>
               <li><a href="#menu" class="scroll"><span data-hover="menu">recetas</span></a></li>
@@ -171,13 +164,22 @@ function createMarker(place) {
             style="visibility: visible; height: 692px;">
             <h2>Historia</h2>
             <img src="images/img2.png" alt="">
-            <p>Somos una empresa que inició su actividad como negocio familiar, hace más de 60 años en Culiacán, Sinaloa. Empacándose en bolsas muy pequeñas productos como pimienta, comino, clavo de olor y canela, En 1953 se continuó en Tijuana bajo el mismo concepto y no fue sino hasta 1968 que oficialmente nació la empresa "Productos La Surtidora" con únicamente 2 empleados, creció la empresa hasta convertirnos en lideres en este ramo del comercio y poco a poco se amplió nuestro alcance hasta cubrir todo el estado de Baja California. En 1992 entramos al interior del País, al establecer la sucursal en la ciudad de Guadalajara. Después de vencer las dificultades propias que trae la introducción de un producto nuevo en el mercado, nos hemos consolidado con la venta de nuestros productos en toda la República Mexicana. Hace 10 años que se convirtió en <span>Especias y condimentos de México S.A. de C.V</span>.
-</p>
-              
-              
-              
-              
-            </div>
+            <p>Somos una empresa que inició su actividad como negocio familiar,
+              hace más de 60 años en Culiacán, Sinaloa. Empacándose en bolsas
+              muy pequeñas productos como pimienta, comino, clavo de olor y
+              canela, En 1953 se continuó en Tijuana bajo el mismo concepto y no
+              fue sino hasta 1968 que oficialmente nació la empresa "Productos
+              La Surtidora" con únicamente 2 empleados, creció la empresa hasta
+              convertirnos en lideres en este ramo del comercio y poco a poco se
+              amplió nuestro alcance hasta cubrir todo el estado de Baja
+              California. En 1992 entramos al interior del País, al establecer
+              la sucursal en la ciudad de Guadalajara. Después de vencer las
+              dificultades propias que trae la introducción de un producto nuevo
+              en el mercado, nos hemos consolidado con la venta de nuestros
+              productos en toda la República Mexicana. Hace 10 años que se
+              convirtió en <span>Especias y condimentos de México S.A. de C.V</span>.
+            </p>
+          </div>
           <div class="col-md-6 about-rightgrid  wow bounceInLeft animated" data-wow-delay="0.4s"
             style="visibility: visible; -webkit-animation-delay: 0.4s;"> <img src="images/dish.png"
               alt=""> </div>
@@ -192,7 +194,7 @@ function createMarker(place) {
               <h3>Catalogo</h3>
               <img src="images/divider.png" alt="">
               <p>Si usted a visto y saboreado nuestros productos – ¿que es lo
-                que mantiene a nuestros clientes fieles a nuestros productos? 
+                que mantiene a nuestros clientes fieles a nuestros productos?
                 Ingredientes perfectos y frescos, delicias de la surtidora, solo
                 lo mejor nos hace dificil de resistir; compre hoy y compruebelo!</p>
             </div>
@@ -281,265 +283,390 @@ function createMarker(place) {
                     class="img-responsive" alt=""> </a></div>
               <div class="igredients-img"> <a href="images/bbig42.jpg"> <img src="images/cat-42.png"
                     class="img-responsive" alt=""> </a></div>
-               
-                
               <div class="clearfix"></div>
             </div>
             <div class="clearfix"></div>
           </div>
         </div>
       </div>
-      
-        <div class="menu" id="menu">
-        <div class="container">
-          <div class="col-md-6 menu-grids wow bounceIn animated" data-wow-delay="0.4s"
-            style="visibility: visible; -webkit-animation-delay: 0.4s;">
-            <div class="menu-grid1">
-              <h3></h3>
-              <img src="images/img2.png" alt="">
-              <div class="menu-grid">
-                <div class="tzatsikis">
-                  <div class="tzatsiki">
-                    
+      <div class="overlay1" id="overlay1" style="display:none;"></div>
+      <div class="box1" id="box1"> <a class="boxclose1" id="boxclose1"></a>
+        <h1>Salsa de tomatillo casera</h1>
+        <br>
+        <ul>
+          <li>10 tomatillos verdes.</li>
+          <li>6 chiles de arbol la surtidora.</li>
+          <li>1/4 de cucharada sopera de ajo molido la surtidora.</li>
+          <li>dos dedos de comino la surtidora.</li>
+          <li>1 ramita cilantro fresco.</li>
+          <li>sal al gusto.</li>
+        </ul>
+        <br>
+        <p> se cuece los tomatillos por 10 minutos, en el comal caliente y a
+          flama baja se doran los chiles, se muele en la licuidora con poquita
+          agua del tomatillo con los chiles y se le agrega el resto de los
+          ingredientes. </p>
+      </div>
+      <div class="overlay2" id="overlay2" style="display:none;"></div>
+      <div class="box2" id="box2"> <a class="boxclose2" id="boxclose2"></a>
+        <h1>Aderezo de cilantro</h1>
+        <br>
+        <ul>
+          <li>1/4 de cuchara de ajo molido La Surtidora.</li>
+          <li>1 manojo de cilantro, sus hojas.</li>
+          <li>1/2 cebolla en trozos.</li>
+          <li>1 taza de aceite de oliva extra virgen.</li>
+          <li>1/4 de taza de vinagre blanco.</li>
+          <li>1 limon grande, su jugo.</li>
+          <li>2 chiles serranos, picados.</li>
+          <li>Sal y pimienta La Surtidora al gusto.</li>
+        </ul>
+        <br>
+        <p> Licua todos los ingredientes hasta tener el aderezo de consistencia
+          homogénea. </p>
+        <br>
+        <a href="http://allrecipes.com.mx/receta/8168/aderezo-de-cilantro.aspx">Referencia</a>
+      </div>
+      <div class="overlay3" id="overlay3" style="display:none;"></div>
+      <div class="box3" id="box3"> <a class="boxclose3" id="boxclose3"></a>
+        <h1>Salsa roquefort</h1>
+        <br>
+        <ul>
+          <li>1/2 kilo de queso roquefort de buena calidad.</li>
+          <li>1 taza de mantequilla sin sal.</li>
+          <li>3 tazas de vino blanco.</li>
+          <li>4 cucharaditas de pimienta negra, molida La Surtidora.</li>
+          <li>2 tazas de crema de leche.</li>
+          <li>3 cucharadas de perejil La Surtidora.</li>
+        </ul>
+        <br>
+        <p> Une la mantequilla y el queso y mezcla en un envase hasta que forme
+          una crema suave. </p>
+        <p>En una sartén, añade el vino con la pimienta. Pon a hervir a fuego
+          alto hasta que se haya reducido a 1/3 de lo que era originalmente.
+          Luego añade la crema y reduce a la mitad de igual forma, pero con el
+          fuego un poco más bajo.</p>
+        <p>Mientras mezclas y con el fuego bajo, añade la mezcla de queso y
+          mantequilla: debes hacerlo de a poco para que se vaya derritiendo, Al
+          final, añade también el perejil y saca del fuego de inmediato.</p>
+        <a href="http://elgranchef.imujer.com/2010/06/02/como-hacer-salsa-roquefort">Referencia</a>
+      </div>
+    </div>
+    <div class="overlay4" id="overlay4" style="display:none;"></div>
+    <div class="box4" id="box4"> <a class="boxclose4" id="boxclose4"></a>
+      <h1>Mayonesa condimentada</h1>
+      <br>
+      <ul>
+        <li>1 taza de mayonesa.</li>
+        <li>1/4 de hierbas picadas como albahaca, perejil, cilantro, tomillo, La
+          Surtidora.</li>
+        <li>1 cucharada de condimento liquido como jugo de limón, dijon, salsa
+          de tomate, pesto, salsa picante. </li>
+        <li>1 cucharada de condimento seco como ajo picado, cebollin, curry en
+          polvo, chipotle en polvo.</li>
+        <li>1 ramita cilantro fresco.</li>
+        <li>Sal y pimienta La Surtidora.</li>
+      </ul>
+      <br>
+      <p> Elige los condimentos que te gusten más para preparar la combinación
+        de mayonesa. En un pequeño bowl agrega los ingredientes y pon sal y
+        pimineta al gusto. Refrigera para poderla utilizar en diversos platillos
+      </p>
+      <div style="text-align: center;"><a href="http://saboruniversal.com/2011/08/como-preparar-mayonesa-condimentada-para-todo-uso/">Referencia</a></div>
+    </div>
+    <div class="menu" id="menu">
+      <div class="container">
+        <div class="recetast">
+          <h3>Recetas</h3>
+        </div>
+        <div class="col-md-6 menu-grids wow bounceIn animated" data-wow-delay="0.4s"
+          style="visibility: visible; -webkit-animation-delay: 0.4s;">
+          <div class="menu-grid1">
+            <h3></h3>
+            <img src="images/img2.png" alt="">
+            <div class="menu-grid">
+              <div class="tzatsikis">
+                <div class="tzatsiki"> <a class="activator" id="activator">
+                    <h4>Salsa de tomate casera</h4>
+                  </a> </div>
+                <div class="clearfix"></div>
+              </div>
+              <p>Una de las cosas que nunca debe faltar en la mesa para la
+                familia Mexicana</p>
+            </div>
+            <div class="menu-grid">
+              <div class="tzatsikis">
+                <div class="tzatsiki"> <a class="activator2" id="activator2">
                     <h4>Aderezo de cilantro</h4>
-                    
-                  </div>
-                  
-                  <div class="clearfix"></div>
-                </div>
-                <p>Este aderezo se lleva a la perfección con todo tipo de ensaladas frescas.</p>
+                  </a> </div>
+                <div class="clearfix"></div>
               </div>
-              <div class="menu-grid">
-                <div class="tzatsikis">
-                  <div class="tzatsiki">
-                    <h4>salsa de tomate casera</h4>
-                  </div>
-                  
-                  <div class="clearfix"></div>
-                </div>
-                <p>una de esas cosas que nunca deberían faltar en la nevera de cada casa.</p>
-              </div>
-              <div class="menu-grid">
-                <div class="tzatsikis">
-                  <div class="tzatsiki">
-                    <h4>sazonador</h4>
-                  </div>
-                  
-                  <div class="clearfix"></div>
-                </div>
-                <p>puedes darle sabor a todas tus recetas.</p>
-              </div>
+              <p>Este aderezo se lleva a la perfección con todo tipo de
+                ensaladas frescas.</p>
             </div>
-            
           </div>
-          <div class="col-md-6 menu-grids1  wow bounceIn animated" data-wow-delay="0.4s"
-            style="visibility: visible; -webkit-animation-delay: 0.4s;">
-            <div class="menu-grid3">
-              <h3></h3>
-              <img src="images/img2.png" alt="">
-              <div class="menu-grid">
-                <div class="tzatsikis">
-                  <div class="tzatsiki">
+        </div>
+        <div class="col-md-6 menu-grids1  wow bounceIn animated" data-wow-delay="0.4s"
+          style="visibility: visible; -webkit-animation-delay: 0.4s;">
+          <div class="menu-grid3">
+            <h3></h3>
+            <img src="images/img2.png" alt="">
+            <div class="menu-grid">
+              <div class="tzatsikis">
+                <div class="tzatsiki"> <a class="activator3" id="activator3">
                     <h4>Salsa roquefort</h4>
-                  </div>
-                  
-                  <div class="clearfix"></div>
-                </div>
-                <p>El acompañamiento idóneo para carnes, pastas, pescados...</p>
+                  </a> </div>
+                <div class="clearfix"></div>
               </div>
-              <div class="menu-grid">
-                <div class="tzatsikis">
-                  <div class="tzatsiki">
+              <p>El acompañamiento idóneo para carnes, pastas, pescados...</p>
+            </div>
+            <div class="menu-grid">
+              <div class="tzatsikis">
+                <div class="tzatsiki"> <a class="activator4" id="activator4">
                     <h4>Mayonesa condimentada</h4>
-                  </div>
-                  
-                  <div class="clearfix"></div>
-                </div>
-                <p>mayonesa condimentada a tu gusto y usarla en diversos platillos.</p>
+                  </a> </div>
+                <div class="clearfix"></div>
               </div>
-            </div>        
-          </div>
-        </div>
-        </div>
-    
-      <div class="reviews" id="reviews" onload="initialize()">
-        <div class="container">
-          <div class="review-info  wow bounceInLeft animated" data-wow-delay="0.4s"
-            style="visibility: visible; -webkit-animation-delay: 0.4s;">
-            <h3>Donde comprar</h3>
-            <div class="estado">
-              <h5 style="color: #f5ecec;">Estado de la República Mexicana</h5>
-              <div class="seleccion-compra">
-                <select id="estado" class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}" onchange="updateMap(this.options[this.selectedIndex].value)">
-                  <option value="0">ESTADO</option>
-                  <option value="1">Aguascalientes</option>
-                  <option value="2">Baja California</option>
-                  <option value="3">Baja California Sur</option>
-                  <option value="4">Campeche</option>
-                  <option value="5">Coahuila de Zaragoza</option>
-                  <option value="6">Colima</option>
-                  <option value="7">Chiapas</option>
-                  <option value="8">Chihuahua</option>
-                  <option value="9">Distrito Federal</option>
-                  <option value="10">Durango</option>
-                  <option value="11">Guanajuato</option>
-                  <option value="12">Guerrero</option>
-                  <option value="13">Hidalgo</option>
-                  <option value="14">Jalisco</option>
-                  <option value="15">México</option>
-                  <option value="16">Michoacán de Ocampo</option>
-                  <option value="17">Morelos</option>
-                  <option value="18">Nayarit</option>
-                  <option value="19">Nuevo León</option>
-                  <option value="20">Oaxaca</option>
-                  <option value="21">Puebla</option>
-                  <option value="22">Querétaro</option>
-                  <option value="23">Quintana Roo</option>
-                  <option value="24">San Luis Potosí</option>
-                  <option value="25">Sinaloa</option>
-                  <option value="26">Sonora</option>
-                  <option value="27">Tabasco</option>
-                  <option value="28">Tamaulipas</option>
-                  <option value="29">Tlaxcala</option>
-                  <option value="30">Veracruz de Ignacio de la Llave</option>
-                  <option value="31">Yucatán</option>
-                  <option value="32">Zacatecas</option>
-                </select>
-              </div>
-            </div>
-            <div class="tienda" >
-              <h5 style="color: #f5ecec;">Tienda</h5>
-              <div class="seleccion-compra">
-                <select class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}"
-                        onchange="updateTienda(this.options[this.selectedIndex].value)">
-                  <option value="0">TIENDA</option>
-                  <option value="1">Aurrera</option>
-                  <option value="2">Chedraui</option>
-                  <option value="3">Comercial Mexicana</option>
-                  <option value="4">Soriana</option>
-                  <option value="5">Superama</option>                  
-                </select>
-              </div>
-            </div>
-            <img src="images/divider.png" alt="">
-            <div id="map" style="width:100%; height:450px; display:block;" > 
-                <div id="map_canvas" style="width:100%; height:450px;">
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14967891.246216552!2d-101.96621148750005!3d23.66628895788603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1427306212618" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-                
-                
-                </div>
+              <p>mayonesa condimentada a tu gusto y usarla en diversos
+                platillos.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="reservations" id="reservations">
-        <div class="container">
-          <div class="col-md-6 grid-section wow bounceIn animated" data-wow-delay="0.4s"
-            style="visibility: visible; -webkit-animation-delay: 0.4s;">
-            <div class="reservation-leftgrid"> <img src="images/pic-4.jpg" class="img-responsive"
-                alt=""> </div>
-            <div class="reservation-leftgrid1"> <img src="images/pic-5.jpg" class="img-responsive"
-                alt=""> </div>
-            <div class=" clearfix"></div>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+    $('#activator').click(function(){
+        $('#overlay1').fadeIn('fast',function(){
+            $('#box1').animate({'top':'160px'},500);
+        });
+    });
+    $('#boxclose1').click(function(){
+        $('#box1').animate({'top':'-400px'},500,function(){
+            $('#overlay1').fadeOut('fast');
+        });
+    });
+
+        });
+        </script>
+    <script type="text/javascript">
+        $(function() {
+    $('#activator2').click(function(){
+        $('#overlay2').fadeIn('fast',function(){
+            $('#box2').animate({'top':'160px'},500);
+        });
+    });
+    $('#boxclose2').click(function(){
+        $('#box2').animate({'top':'-400px'},500,function(){
+            $('#overlay2').fadeOut('fast');
+        });
+    });
+
+        });
+        </script>
+    <script type="text/javascript">
+        $(function() {
+    $('#activator3').click(function(){
+        $('#overlay3').fadeIn('fast',function(){
+            $('#box3').animate({'top':'60px'},500);
+        });
+    });
+    $('#boxclose3').click(function(){
+        $('#box3').animate({'top':'-500px'},500,function(){
+            $('#overlay3').fadeOut('fast');
+        });
+    });
+
+        });
+        </script>
+    <script type="text/javascript">
+        $(function() {
+    $('#activator4').click(function(){
+        $('#overlay4').fadeIn('fast',function(){
+            $('#box4').animate({'top':'160px'},500);
+        });
+    });
+    $('#boxclose4').click(function(){
+        $('#box4').animate({'top':'-500px'},500,function(){
+            $('#overlay4').fadeOut('fast');
+        });
+    });
+
+        });
+        </script>
+    <div class="reviews" id="reviews" onload="initialize()">
+      <div class="container">
+        <div class="review-info  wow bounceInLeft animated" data-wow-delay="0.4s"
+          style="visibility: visible; -webkit-animation-delay: 0.4s;">
+          <h3>Donde comprar</h3>
+          <div class="estado">
+            <h5 style="color: #f5ecec;">Estado de la República Mexicana</h5>
+            <div class="seleccion-compra">
+              <select id="estado" class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}"
+                onchange="updateMap(this.options[this.selectedIndex].value)">
+                <option value="0">ESTADO</option>
+                <option value="1">Aguascalientes</option>
+                <option value="2">Baja California</option>
+                <option value="3">Baja California Sur</option>
+                <option value="4">Campeche</option>
+                <option value="5">Coahuila de Zaragoza</option>
+                <option value="6">Colima</option>
+                <option value="7">Chiapas</option>
+                <option value="8">Chihuahua</option>
+                <option value="9">Distrito Federal</option>
+                <option value="10">Durango</option>
+                <option value="11">Guanajuato</option>
+                <option value="12">Guerrero</option>
+                <option value="13">Hidalgo</option>
+                <option value="14">Jalisco</option>
+                <option value="15">México</option>
+                <option value="16">Michoacán de Ocampo</option>
+                <option value="17">Morelos</option>
+                <option value="18">Nayarit</option>
+                <option value="19">Nuevo León</option>
+                <option value="20">Oaxaca</option>
+                <option value="21">Puebla</option>
+                <option value="22">Querétaro</option>
+                <option value="23">Quintana Roo</option>
+                <option value="24">San Luis Potosí</option>
+                <option value="25">Sinaloa</option>
+                <option value="26">Sonora</option>
+                <option value="27">Tabasco</option>
+                <option value="28">Tamaulipas</option>
+                <option value="29">Tlaxcala</option>
+                <option value="30">Veracruz de Ignacio de la Llave</option>
+                <option value="31">Yucatán</option>
+                <option value="32">Zacatecas</option>
+              </select>
+            </div>
           </div>
+          <div class="tienda">
+            <h5 style="color: #f5ecec;">Tienda</h5>
+            <div class="seleccion-compra">
+              <select class="dropdown" tabindex="0" data-settings="{&quot;wrapperClass&quot;:&quot;flat&quot;}"
+                onchange="updateTienda(this.options[this.selectedIndex].value)">
+                <option value="0">TIENDA</option>
+                <option value="1">Aurrera</option>
+                <option value="2">Chedraui</option>
+                <option value="3">Comercial Mexicana</option>
+                <option value="4">Soriana</option>
+                <option value="5">Superama</option>
+              </select>
+            </div>
+          </div>
+          <img src="images/divider.png" alt="">
+          <div id="map" style="width:100%; height:450px; display:block;">
+            <div id="map_canvas" style="width:100%; height:450px;"> <iframe src="https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d14967891.246216552%212d-101.96621148750005%213d23.66628895788603%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x84043a3b88685353%3A0xed64b4be6b099811%212zTcOpeGljbw%215e0%213m2%211ses-419%212smx%214v1427306212618"
+                style="border:0" frameborder="0" height="450" width="100%"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reservations" id="reservations">
+      <div class="container">
+        <div class="col-md-6 grid-section wow bounceIn animated" data-wow-delay="0.4s"
+          style="visibility: visible; -webkit-animation-delay: 0.4s;">
+          <div class="reservation-leftgrid"> <img src="images/pic-4.jpg" class="img-responsive"
+              alt=""> </div>
+          <div class="reservation-leftgrid1"> <img src="images/pic-5.jpg" class="img-responsive"
+              alt=""> </div>
+          <div class=" clearfix"></div>
+        </div>
+        <form id="formulario" name="formulario" method="POST" action="post.php">
           <div class="col-md-6 reservation-rightgrid wow bounceIn animated" data-wow-delay="0.4s"
             style="visibility: visible; -webkit-animation-delay: 0.4s;">
             <h4>Escribenos</h4>
             <img src="images/img2.png" alt="">
-            
             <div style="margin-left: -16px;" class="contact">
               <div class="contact-text">
                 <h5>nombre</h5>
-                <input class="text" value="tu nombre *" onfocus="this.value = '';"
-                  onblur="if (this.value == '') {this.value = 'tu nombre*';}" type="text">
-              </div>
+                <input class="text" name="nombre" id="nombre" placeholder="nombre"
+                  value="tu nombre *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'tu nombre*';}"
+                  type="nombre"> </div>
               <div class="contact-text">
                 <h5>correo</h5>
-                <input class="text" value="tu e-mail *" onfocus="this.value = '';"
-                  onblur="if (this.value == '') {this.value = 'tu e-mail*';}" type="text">
-              </div>
+                <input class="text" name="email" id="email" required="" placeholder="Email"
+                  value="tu e-mail *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'tu e-mail*';}"
+                  type="text"> </div>
               <div class="clearfix"></div>
               <h5>mensaje</h5>
-              <textarea class="mensaje" name="message" maxlength="1000" cols="55"
-                rows="4"></textarea> 
-                <input class="btn btn-1 btn-1c" value="enviar"
-                type="button"> </div>
+              <textarea name="mensaje" id="mensaje" placeholder="Mensaje" maxlength="1000"
+                cols="55" rows="4" required=""></textarea> <input class="btn btn-1 btn-1c"
+                value="Enviar" name="send" id="submit" type="submit"> </div>
             <div class="clearfix"></div>
           </div>
-        </div>
-          <script type="text/javascript">
-						$(document).ready(function() {
-							
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script> <a href="#" id="toTop" style="display: block;"> <span id="toTopHover"
-              style="opacity: 1;"> </span></a> </div>
-     
-      <div id="nosotros" class="footer-section wow fadeInLeft" data-wow-delay="0.5s">
-        <div class="container">
-          <div class="footer-grids">
-            <div class="col-md-4 footer-grid">
-              <h5>Mision</h5>
-              <img src="images/divider.png" alt="">
-                
-              
-              <p>Somos una empresa dedicada a empacar <span>especias y condimentos</span>
-                 
-                (tales como pimienta, sal de ajo, perejil, laurel, varios tipos de chile,
-                canela, pasas, arándanos, uva pasa, entre muchos otros),
-                solo de la mejor calidad al mejor precio y distribuirlos en tiendas de autoservicio, a lo 
-                  largo de la República Mexicana.  </p>
-            </div>
-            <div class="col-md-4 footer-grid">
-              <h5>Vision</h5>
-              <img src="images/divider.png" alt="">
-              <p>Es crecer a nivel internacional, convirtiéndonos en la empresa número uno en venta y distribución de especias y condimentos, dando seguridad a las personas que siempre obtendrán producto de la mejor calidad.</p>
-              
-               </div>
-            <div class="col-md-4 footer-grid">
-              <h5>Oficinas</h5>
-              <img src="images/divider.png" alt="">
-              <p>Bulevar Ferrocarril #410</p>
-              <p>Fraccionamiento Los Españoles</p>
-              <p>C.P. 22430</p>
-              <p>Tijuana, B.C.</p>
-                <a href="https://www.facebook.com/pages/La-Surtidora-ECM/789169701160820?fref=ts">
-                <img src="images/FB-f-Logo__blue_29.png" style="width:10%;height:10%">
-                </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="footer-bottom">
-            <p> Copyright ©2015 All rights Reserved | Template by<a href="http://w3layouts.com"
-                target="target_blank">W3Layouts</a></p>
-          </div>
-          <script type="text/javascript">
-						$(document).ready(function() {
-							
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script> <a href="#" id="toTop" style="display: block;"> <span id="toTopHover"
-              style="opacity: 1;"> </span></a> </div>
+        </form>
       </div>
+      <script type="text/javascript">
+						$(document).ready(function() {
+							
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script> <a href="#" id="toTop" style="display: block;"> <span id="toTopHover"
+          style="opacity: 1;"> </span></a> </div>
+    <div id="nosotros" class="footer-section wow fadeInLeft" data-wow-delay="0.5s">
+      <div class="container">
+        <div class="footer-grids">
+          <div class="col-md-4 footer-grid">
+            <h5>Mision</h5>
+            <img src="images/divider.png" alt="">
+            <p>Somos una empresa dedicada a empacar <span>especias y
+                condimentos</span> (tales como pimienta, sal de ajo, perejil,
+              laurel, varios tipos de chile, canela, pasas, arándanos, uva pasa,
+              entre muchos otros), solo de la mejor calidad al mejor precio y
+              distribuirlos en tiendas de autoservicio, a lo largo de la
+              República Mexicana. </p>
+          </div>
+          <div class="col-md-4 footer-grid">
+            <h5>Vision</h5>
+            <img src="images/divider.png" alt="">
+            <p>Es crecer a nivel internacional, convirtiéndonos en la empresa
+              número uno en venta y distribución de especias y condimentos,
+              dando seguridad a las personas que siempre obtendrán producto de
+              la mejor calidad.</p>
+          </div>
+          <div class="col-md-4 footer-grid">
+            <h5>Oficinas</h5>
+            <img src="images/divider.png" alt="">
+            <p>Bulevar Ferrocarril #410</p>
+            <p>Fraccionamiento Los Españoles</p>
+            <p>C.P. 22430</p>
+            <p>Tijuana, B.C.</p>
+            <a href="https://www.facebook.com/pages/La-Surtidora-ECM/789169701160820?fref=ts">
+              <img src="images/FB-f-Logo__blue_29.png" style="width:10%;height:10%">
+            </a> </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="footer-bottom">
+          <p> Copyright ©2015 All rights Reserved | Template by<a href="http://w3layouts.com"
+              target="target_blank">W3Layouts</a></p>
+        </div>
+        <script type="text/javascript">
+						$(document).ready(function() {
+							
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script> <a href="#" id="toTop" style="display: block;"> <span id="toTopHover"
+            style="opacity: 1;"> </span></a> </div>
     </div>
   </body>
 </html>

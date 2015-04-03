@@ -251,12 +251,224 @@ a.button1:hover {
 }
 
 
+.overlay1{
+    background:transparent url(/images/overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+
+.box1{
+    position:fixed;
+    top:-400px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #ccc;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+}
+
+a.boxclose1{
+    float:right;
+    width:32px;
+    height:32px;
+    background:transparent url(/images/cancel.png) repeat top left;
+    margin-top:-24px;
+    margin-right:-19px;
+    cursor:pointer;
+}
+
+.box1 h1{
+    border-bottom: 1px dashed #7F7F7F;
+    margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color:#FFEFEF;
+    color:#EF7777;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -khtml-border-top-left-radius: 20px;
+    -khtml-border-top-right-radius: 20px;
+}
+
+
+.overlay2{
+    background:transparent url(/images/overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+
+.box2{
+    position:fixed;
+    top:-400px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #ccc;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+}
+
+a.boxclose2{
+    float:right;
+    width:32px;
+    height:32px;
+    background:transparent url(/images/cancel.png) repeat top left;
+    margin-top:-24px;
+    margin-right:-19px;
+    cursor:pointer;
+}
+
+.box2 h1{
+    border-bottom: 1px dashed #7F7F7F;
+    margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color:#FFEFEF;
+    color:#EF7777;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -khtml-border-top-left-radius: 20px;
+    -khtml-border-top-right-radius: 20px;
+}
+
+.overlay3{
+    background:transparent url(/images/overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+
+.box3{
+    position:fixed;
+    top:-500px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #ccc;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+}
+
+a.boxclose3{
+    float:right;
+    width:32px;
+    height:32px;
+    background:transparent url(/images/cancel.png) repeat top left;
+    margin-top:-24px;
+    margin-right:-19px;
+    cursor:pointer;
+}
+
+.box3 h1{
+    border-bottom: 1px dashed #7F7F7F;
+    margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color:#FFEFEF;
+    color:#EF7777;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -khtml-border-top-left-radius: 20px;
+    -khtml-border-top-right-radius: 20px;
+}
+
+.overlay4{
+    background:transparent url(/images/overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+
+.box4{
+    position:fixed;
+    top:-500px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #ccc;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+}
+
+a.boxclose4{
+    float:right;
+    width:32px;
+    height:32px;
+    background:transparent url(/images/cancel.png) repeat top left;
+    margin-top:-24px;
+    margin-right:-19px;
+    cursor:pointer;
+}
+
+.box4 h1{
+    border-bottom: 1px dashed #7F7F7F;
+    margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color:#FFEFEF;
+    color:#EF7777;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -khtml-border-top-left-radius: 20px;
+    -khtml-border-top-right-radius: 20px;
+}
+
 .menu9{
 	background: url("../images/banner1.jpg") no-repeat;
 	background-size:cover;
 	min-height:910px;
 	padding-top:4em;
 }
+
+.recetast h3{
+	font-size: 3em;
+	color: #cc9900;
+	font-weight: 400;
+	text-align: center;
+	padding-bottom: 15px;
+	text-transform: capitalize;
+	font-family: 'Yeseva One', cursive;
+}
+
 .menu-grids {
 	text-align: center;
 	width: 47.5%;
@@ -271,6 +483,8 @@ a.button1:hover {
 	text-transform: capitalize;
 	font-family: 'Yeseva One', cursive;
 }
+
+
 .menu-grids1 {
 	text-align: center;
 	width: 47.5%;
