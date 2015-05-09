@@ -178,7 +178,7 @@ a.button1:hover {
 	font-family: 'Yeseva One', cursive;
 	padding: 0 0 20px 0;
 	
-}
+}$
 .fine-igredient p{
 	font-size: 1.2em;
 	color: #ffffff;
@@ -212,6 +212,32 @@ a.button1:hover {
 	background-position: 0px 1px;
 }
 .igredients-imgs a i.icon1:hover {
+	opacity: 0.5;
+    background-color: #f1f0f1;
+    padding: 1px;
+}
+
+.donde {
+	float: left;
+	margin: 15px 12px 0 15px;
+    display: block;
+    
+}
+
+
+
+.donde img {
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    width: 100%;
+    box-shadow: 0 0 #fff;
+        }
+
+.comprar a i .icon1{
+	background-position: 0px 1px;
+}
+.comprar a i.icon1:hover {
 	opacity: 0.5;
     background-color: #f1f0f1;
     padding: 1px;
@@ -563,7 +589,7 @@ a.boxclose4{
 }
 
 .review-info {
-	background: rgba(0, 0, 0, 0.77);
+	background: rgba(252, 246, 246, 0.77);
 	width: 100%;
 	margin: 6em auto 0;
 	text-align: center;
@@ -572,13 +598,13 @@ a.boxclose4{
 }
 .review-info h3{
 	font-size: 3em;
-	color: #ffffff;
+	color: #333;
 	font-family: 'Yeseva One', cursive;
 	padding:0 0 20px 0;
 }
 .review-info p {
 	font-size: 1.3em;
-	color: #ffffff;
+	color: #333;
 	padding: 1.5em 0;
 	font-family: 'Lato', sans-serif;
 	line-height: 1.8em;
@@ -1082,6 +1108,11 @@ a.boxclose4{
 				float: left;
 				margin: 10px 10px 20px 8px;
 			}
+            
+            .donde {
+				float: left;
+				margin: 10px 10px 20px 8px;
+			}
 			.menu9{
 				min-height: 795px;
 			}
@@ -1265,6 +1296,11 @@ a.boxclose4{
 					font-size: 2.3em;
 				}
 				.igredients-img {
+					width: 25%;
+					margin: 0px 10px 0 10px;
+				}
+        
+                .donde {
 					width: 25%;
 					margin: 0px 10px 0 10px;
 				}
