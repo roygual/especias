@@ -137,7 +137,7 @@ a.button1:hover {
 .about{
 	background: url("../images/banner1.jpg") no-repeat;
 	background-size:cover;
-	min-height:690px;
+	min-height:90px;
 	padding-top:3em;
 }
 .about-leftgrid {
@@ -162,7 +162,7 @@ a.button1:hover {
 {
 	background:url("../images/banner2.jpg") no-repeat;
 	background-size:cover;
-	min-height:350px; 
+	min-height:35px; 
 }
 .fine-igredients {
 	background: rgba(0, 0, 0, 0.77);
@@ -191,7 +191,7 @@ a.button1:hover {
 
 .igredients-img {
 	float: left;
-	margin: 15px 12px 0 15px;
+	margin: 1.5% 1% 0 1.5%;
     display: block;
     background: url(../images/magnify.png) center center no-repeat;
 }
@@ -219,7 +219,7 @@ a.button1:hover {
 
 .donde {
 	float: left;
-	margin: 15px 12px 0 15px;
+	margin: margin: 1.5% 1% 0 1.5%;
     display: block;
     
 }
@@ -289,12 +289,12 @@ a.button1:hover {
 
 .box1{
     position:fixed;
-    top:-400px;
+    top:-400%;
     left:30%;
     right:30%;
     background-color:#fff;
     color:#7F7F7F;
-    padding:20px;
+    padding:1.5%;
     border:2px solid #ccc;
     -moz-border-radius: 20px;
     -webkit-border-radius:20px;
@@ -306,18 +306,18 @@ a.button1:hover {
 
 a.boxclose1{
     float:right;
-    width:32px;
+    width:7%;
     height:32px;
     background:transparent url(/images/cancel.png) repeat top left;
-    margin-top:-24px;
-    margin-right:-19px;
+    margin-top:-6%;
+    margin-right:-6%;
     cursor:pointer;
 }
 
 .box1 h1{
     border-bottom: 1px dashed #7F7F7F;
-    margin:-20px -20px 0px -20px;
-    padding:10px;
+    margin:-4% -4% 0% -4%;
+    padding:2%;
     background-color:#FFEFEF;
     color:#EF7777;
     -moz-border-radius:20px 20px 0px 0px;
@@ -340,13 +340,13 @@ a.boxclose1{
 
 .box2{
     position:fixed;
-    top:-400px;
+    top:-400%;
     left:30%;
     right:30%;
     background-color:#fff;
     color:#7F7F7F;
-    padding:20px;
-    border:2px solid #ccc;
+    padding:1.5%;
+    border:0.5% solid #ccc;
     -moz-border-radius: 20px;
     -webkit-border-radius:20px;
     -khtml-border-radius:20px;
@@ -357,18 +357,18 @@ a.boxclose1{
 
 a.boxclose2{
     float:right;
-    width:32px;
+    width:7%;
     height:32px;
     background:transparent url(/images/cancel.png) repeat top left;
-    margin-top:-24px;
-    margin-right:-19px;
+    margin-top:-6%;
+    margin-right:-6%;
     cursor:pointer;
 }
 
 .box2 h1{
     border-bottom: 1px dashed #7F7F7F;
-    margin:-20px -20px 0px -20px;
-    padding:10px;
+    margin:-4% -4% 0% -4%;
+    padding:2%;
     background-color:#FFEFEF;
     color:#EF7777;
     -moz-border-radius:20px 20px 0px 0px;
@@ -390,12 +390,12 @@ a.boxclose2{
 
 .box3{
     position:fixed;
-    top:-500px;
+    top:-400%;
     left:30%;
     right:30%;
     background-color:#fff;
     color:#7F7F7F;
-    padding:20px;
+    padding:1.5%;
     border:2px solid #ccc;
     -moz-border-radius: 20px;
     -webkit-border-radius:20px;
@@ -407,18 +407,18 @@ a.boxclose2{
 
 a.boxclose3{
     float:right;
-    width:32px;
+    width:7%;
     height:32px;
     background:transparent url(/images/cancel.png) repeat top left;
-    margin-top:-24px;
-    margin-right:-19px;
+    margin-top:-6%;
+    margin-right:-6%;
     cursor:pointer;
 }
 
 .box3 h1{
     border-bottom: 1px dashed #7F7F7F;
-    margin:-20px -20px 0px -20px;
-    padding:10px;
+    margin:-4% -4% 0% -4%;
+    padding:2%;
     background-color:#FFEFEF;
     color:#EF7777;
     -moz-border-radius:20px 20px 0px 0px;
@@ -440,12 +440,12 @@ a.boxclose3{
 
 .box4{
     position:fixed;
-    top:-500px;
+    top:-400%;
     left:30%;
     right:30%;
     background-color:#fff;
     color:#7F7F7F;
-    padding:20px;
+    padding:1.5%;
     border:2px solid #ccc;
     -moz-border-radius: 20px;
     -webkit-border-radius:20px;
@@ -457,18 +457,18 @@ a.boxclose3{
 
 a.boxclose4{
     float:right;
-    width:32px;
+    width:7%;
     height:32px;
     background:transparent url(/images/cancel.png) repeat top left;
-    margin-top:-24px;
-    margin-right:-19px;
+    margin-top:-6%;
+    margin-right:-6%;
     cursor:pointer;
 }
 
 .box4 h1{
     border-bottom: 1px dashed #7F7F7F;
-    margin:-20px -20px 0px -20px;
-    padding:10px;
+    margin:-4% -4% 0% -4%;
+    padding:2%;
     background-color:#FFEFEF;
     color:#EF7777;
     -moz-border-radius:20px 20px 0px 0px;
@@ -1001,7 +1001,7 @@ a.boxclose4{
 				padding-top: 6em;
 			}
 			.igredients {
-				min-height: 640px;
+				min-height: 64px;
 			}
 			.footer-bottom {
 
@@ -1022,7 +1022,7 @@ a.boxclose4{
 				width: 33%;
 			}
 			.igredients {
-				min-height: 591px;
+				min-height: 59px;
 			}
 			.fine-igredients {
 				margin: 3em auto 0;
@@ -1060,7 +1060,7 @@ a.boxclose4{
 				padding-bottom: 25px;
 			}
 			.about{
-				min-height:520px;
+				min-height:52px;
 			}
 			.about-leftgrid {
 				padding-top: 1em;
@@ -1087,7 +1087,7 @@ a.boxclose4{
 				width: 40%;
 			}
 			.igredients{
-				min-height: 477px;
+				min-height: 47px;
 			}
 			.fine-igredient h3 {
 				font-size: 2.5em;
@@ -1106,12 +1106,12 @@ a.boxclose4{
 			}
 			.igredients-img {
 				float: left;
-				margin: 10px 10px 20px 8px;
+				margin: 1% 1% 1.5% 0.5%;
 			}
             
             .donde {
 				float: left;
-				margin: 10px 10px 20px 8px;
+				margin: margin: 1% 1% 1.5% 0.5%;;
 			}
 			.menu9{
 				min-height: 795px;
@@ -1257,7 +1257,7 @@ a.boxclose4{
 					font-size: 13px;
 				}
 				.about {
-					min-height: 420px;
+					min-height: 42px;
 				}
 				.about-leftgrid p {
 					font-size: 1em;
@@ -1282,7 +1282,7 @@ a.boxclose4{
 				}
 				.igredients {
 
-					min-height: 363px
+					min-height: 36px
 				}
 				.fine-igredient h3 {
 					font-size: 2.3em;
@@ -1297,7 +1297,7 @@ a.boxclose4{
 				}
 				.igredients-img {
 					width: 25%;
-					margin: 0px 10px 0 10px;
+					margin: 0% 0.5% 0% 0.5%;
 				}
         
                 .donde {
@@ -1523,7 +1523,7 @@ a.boxclose4{
 			padding: 1em 2em;
 		}
 		.about {
-			min-height: 315px;
+			min-height: 35px;
 			padding-top: 2em;
 		}
 		.about-leftgrid h2 {
@@ -1537,7 +1537,7 @@ a.boxclose4{
         
         
 		.igredients {
-			min-height: 95px;
+			min-height: 9px;
 		}
 		.fine-igredients {
 			padding: 1.5em 2em;
@@ -1668,7 +1668,7 @@ a.boxclose4{
 			margin-top: 1em;
 		}
 		.igredients {
-			min-height: 240px;
+			min-height: 24px;
 		}
 		.fine-igredients {
 			padding: 0.5em 2em;
