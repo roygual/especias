@@ -193,7 +193,7 @@ a.button1:hover {
 	float: left;
 	margin: 1.5% 1% 0 1.5%;
     display: block;
-    background: url("../images/magnify.png") center center no-repeat;
+    background: url(../images/magnify.png) center center no-repeat;
 }
 
 .igredients-img:hover img {
@@ -247,7 +247,7 @@ a.button1:hover {
 #prevArrow,#nextArrow{
 	border:none;
 	text-decoration:none;
-	background:url("../images/arrows.png") no-repeat;
+	background:url('/images/arrows.png') no-repeat;
 	opacity:0.5;
 	cursor:pointer;
 	position:absolute;
@@ -278,7 +278,7 @@ a.button1:hover {
 
 
 .overlay1{
-    background:transparent url("../images/overlay.png") repeat top left;
+    background:transparent url(/images/overlay.png) repeat top left;
     position:fixed;
     top:0px;
     bottom:0px;
@@ -329,7 +329,7 @@ a.boxclose1{
 
 
 .overlay2{
-    background:transparent url("../images/overlay.png") repeat top left;
+    background:transparent url(/images/overlay.png) repeat top left;
     position:fixed;
     top:0px;
     bottom:0px;
@@ -379,7 +379,7 @@ a.boxclose2{
 }
 
 .overlay3{
-    background:transparent url("../images/overlay.png") repeat top left;
+    background:transparent url(/images/overlay.png) repeat top left;
     position:fixed;
     top:0px;
     bottom:0px;
@@ -429,7 +429,7 @@ a.boxclose3{
 }
 
 .overlay4{
-    background:transparent url("../images/overlay.png") repeat top left;
+    background:transparent url(/images/overlay.png) repeat top left;
     position:fixed;
     top:0px;
     bottom:0px;
@@ -824,7 +824,7 @@ a.boxclose4{
 	top: 0;
 	bottom: 0;
 	padding:20px 20px;
-	background: url("../images/img-sprite.png") no-repeat 0px -46px;
+	background: url(../images/img-sprite.png) no-repeat 0px -46px;
 	border-radius: 0 5px 5px 0;
 	-webkit-border-radius: 0 5px 5px 0;
 	-moz-border-radius: 0 5px 5px 0;
@@ -832,7 +832,7 @@ a.boxclose4{
 }
 .flat:hover .selected::after,
 .flat.focus .selected::after{
-	background:url("../images/img-sprite.png") no-repeat -43px -46px;
+	background:url(../images/img-sprite.png) no-repeat -43px -46px;
 }
 /* DROP DOWN WRAPPER */
 .flat div{
@@ -1425,7 +1425,7 @@ a.boxclose4{
 		padding-top:0em;
 		}
 		span.menu:before {
-			content: url("../images/nav.png") no-repeat 0px 0px;
+			content: url(../images/nav.png) no-repeat 0px 0px;
 			cursor: pointer;
 		}
 		.top-menu {
